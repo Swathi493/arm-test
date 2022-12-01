@@ -14,7 +14,7 @@
         "Created by": "Swathi",
         "Purpose": "Training-store terraform state file"
       }
-    }
+    },
     "containerName": {
       "type": "string",
       "defaultValue": "tfstate",
