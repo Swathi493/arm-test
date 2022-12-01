@@ -8,6 +8,13 @@
         "description": "Specifies the name of the Azure Storage account."
       }
     },
+    "resourceTags": {
+      "type": "object",
+      "defaultValue": {
+        "Created by": "Swathi",
+        "Purpose": "Training-store terraform state file"
+      }
+    }
     "containerName": {
       "type": "string",
       "defaultValue": "tfstate",
@@ -29,6 +36,7 @@
       "apiVersion": "2019-06-01",
       "name": "[parameters('storageAccountName')]",
       "location": "[parameters('location')]",
+       "tags": "[parameters('resourceTags')]",
       "sku": {
         "name": "Standard_LRS",
         "tier": "Standard"
